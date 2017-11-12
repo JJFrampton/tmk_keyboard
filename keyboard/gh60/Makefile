@@ -61,8 +61,8 @@ CONFIG_H = config.h
 
 
 # MCU name
-#MCU = at90usb1287
-MCU = atmega32u4
+MCU = at90usb1287
+#MCU = atmega32u4
 
 # Processor frequency.
 #     This will define a symbol, F_CPU, in all source code files equal to the
@@ -119,7 +119,7 @@ EXTRAKEY_ENABLE = yes	# Audio control and System control(+450)
 CONSOLE_ENABLE = yes	# Console for debug(+400)
 COMMAND_ENABLE = yes    # Commands for debug and configuration
 #SLEEP_LED_ENABLE = yes  # Breathing sleep LED during USB suspend
-NKRO_ENABLE = yes	# USB Nkey Rollover
+#NKRO_ENABLE = yes	# USB Nkey Rollover
 
 
 # Optimize size but this may cause error "relocation truncated to fit"
