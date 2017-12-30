@@ -25,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    JJF
 #define PRODUCT         P14
-#define DESCRIPTION     t.m.k. keyboard firmware for P14
+#define DESCRIPTION     t.m.k. keyboard firmware for JJFs P14
 
 /* key matrix size */
 #define MATRIX_ROWS 4
