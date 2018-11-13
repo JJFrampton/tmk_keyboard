@@ -93,9 +93,8 @@ matrix_row_t matrix_get_row(uint8_t row)
 
 /* Column pin configuration
  * col: 0   1   2   3   4   5   6   7   8   9   10  11  12  13
- * pin: F0  F1  E6  C7  C6  B6  D4  B1  B0  B5  B4  D7  D6  B3  (Rev.A - T2++)
- * pin:                                 B7                      (Rev.B - T2++)
- * pin: F1  F5  F4  F6  F7  B6  F0  D0  D1  D2  D3  C6  C7  D5  (Rev.C - T2)
+ * pin: D5  C7  C6  D3  D2  D1  D0  F0  B6  F7  F6  F4  F5  F1
+
  */
 static void  init_cols(void)
 {
@@ -109,6 +108,7 @@ static void  init_cols(void)
     DDRD  &= ~(1<<0 | 1<<1 | 1<<2 | 1<<3 | 1<<5);
     PORTD |=  (1<<0 | 1<<1 | 1<<2 | 1<<3 | 1<<5);
 }
+
 
 static matrix_row_t read_cols(void)
 {
